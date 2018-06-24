@@ -1,0 +1,456 @@
+html {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #3D3C3D;
+}
+body {
+  line-height: 2rem;
+}
+/* div,
+nav {
+  border: 1px solid black;
+} */
+h1 {
+  font-size: 2.75rem;
+  font-weight: 700;
+  line-height: 2.75rem;
+  color: #3D3C3D;
+}
+h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #3D3C3D;
+}
+h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #3D3C3D;
+}
+.image-container img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+p {
+  font-size: 1rem;
+  color: #3D3C3D;
+}
+a:hover {
+  color: #8C8A8C;
+}
+/* Header */
+header {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  background-color: white;
+  /* font-size: 1.5rem; */
+}
+header .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
+  padding: 0rem 1.5rem;
+}
+header .desktop li {
+  margin-left: 1rem;
+}
+header .content .mobile {
+  display: none;
+}
+header .logo {
+  display: flex;
+}
+header .logo img {
+  display: block;
+  object-fit: cover;
+}
+header .logo div .logo-bold {
+  font-weight: 700;
+}
+header .logo div .logo-grey {
+  color: #CBC7CC;
+}
+header nav ul {
+  display: flex;
+}
+@media only screen and (max-width: 640px) {
+  header .logo {
+    display: none;
+  }
+  header .content .desktop {
+    display: none;
+  }
+  header .content .mobile {
+    display: block;
+    width: 100%;
+  }
+  header .mobile ul {
+    justify-content: space-between;
+    align-items: center;
+  }
+  header nav img {
+    display: block;
+  }
+}
+/* Sign up section */
+.sign-up {
+  display: flex;
+  position: relative;
+  top: 4rem;
+  width: 100%;
+  height: auto;
+  background-color: #CBC7CC;
+}
+.sign-up .image-container,
+.sign-up .content {
+  margin: 2rem 1.5rem;
+}
+.sign-up .image-container {
+  width: 60%;
+}
+
+.sign-up .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  min-width: 330px;
+  height: auto;
+}
+.sign-up .text h1 {
+  display: block;
+}
+.sign-up .text h3 {
+  display: block;
+  margin: 1.5rem 0;
+}
+.sign-up .button {
+  text-align: center;
+  background-color: #3D3C3D;
+  padding: 0.25rem 0;
+}
+.sign-up .button:hover {
+  background-color: #696769;
+}
+.sign-up .button a {
+  color: white;
+}
+@media only screen and (max-width: 640px) {
+  .sign-up {
+    display: block;
+  }
+  .sign-up .image-container,
+  .sign-up .content {
+    width: 100%;
+    margin: 0;
+  }
+  .sign-up .content h1,
+  .sign-up .content h3,
+  .sign-up .content .button {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .sign-up .content h1{
+    margin-top: 2rem;
+  }
+  .sign-up .button {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+  }
+}
+/* Information section */
+.information {
+  display: flex;
+  position: relative;
+  top: 4rem;
+  width: 100%;
+  height: auto;
+  }
+
+  .information .column1,
+  .information .column2 {
+    margin: 0 1.5rem;
+  }
+
+  .information .column1 {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
+  .information .column1 img {
+    display: block;
+    /* margin: 0 auto; */
+  }
+  .information .column1 h2 {
+    padding: 2rem 0 1.5rem 0;
+  }
+  .information .column1 p {
+    padding-bottom: 2rem;
+  }
+  .information .column2 {
+    width: 40%;
+    min-width: 330px;
+    padding: 0;
+    border-left: 2px solid #CBC7CC;
+  }
+  .information .column2 #article {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .information .column2 img {
+    display: block;
+    width: 35%;
+    object-fit: contain;
+    margin: 1rem;
+  }
+  .information .column2 .mobile {
+    display: none;
+  }
+  .information .column2 .content {
+    display: inline-block;
+    width: 65%;
+  }
+  .information .column2 .article1 img {
+    margin-top: 2rem;
+  }
+  .information .column2 .article1 {
+    border-bottom: 2px solid #CBC7CC;
+  }
+  .information .column2 .article3 {
+    background-color: #CBC7CC;
+  }
+  .information a {
+    color: #2C41F0;
+  }
+  .information a:hover {
+    color: #5BA0F7;
+    text-decoration: underline;
+  }
+@media only screen and (max-width: 640px) {
+  .information .column1 {
+    display: none;
+  }
+  .information .column2 {
+    width: 100%;
+    margin: 1rem 1rem 0 1rem;
+    border-left: 0;
+  }
+  .information .column2 #article {
+    flex-direction: column;
+  }
+  .information .column2 img,
+  .information .column2 .content {
+    width: 100%;
+    margin: 0 0 2rem 0;
+  }
+  .information .column2 .desktop {
+    display: none;
+  }
+  .information .column2 .mobile {
+    display: block;
+  }
+  .information .column2 .content h3,
+  .information .column2 .content p,
+  .information .column2 .content a {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .information .column2 .content a {
+    margin-bottom: 2rem;
+  }
+  .information .column2 .article3 {
+    background-color: white;
+  }
+}
+/* Courses Section */
+
+.courses {
+  position: relative;
+  top: 4rem;
+  width: 100%;
+  background-color: #EBE6EA;
+}
+.courses h1 {
+  text-align: center;
+  padding-top: 2rem;
+}
+.courses-container {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 4.5rem;
+}
+.courses #column {
+  width: 30%;
+  min-width: 222px;
+}
+.courses #course {
+  margin: 1rem;
+  background-color: white;
+  height: 26rem;
+}
+#course .content {
+  padding: 1rem 1rem 1.5rem 1rem;
+}
+.courses #column img {
+  width: 100%;
+  margin: 0 auto;
+}
+.courses h3:hover {
+  color: #8C8A8C;
+}
+@media only screen and (max-width: 640px) {
+.courses {
+  background-color: white;
+  border: 2px solid #CBC7CC;
+}
+.courses h1 {
+  padding-bottom: 1rem;
+}
+.courses-container {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.courses #column {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.courses #course {
+  height: auto;
+}
+.courses .content {
+  background-color: #EBE6EA;
+}
+.courses-container img,
+.courses-container p {
+  display: none;
+}
+}
+/* Thesis section */
+
+.thesis {
+  position: relative;
+  top: 4rem;
+  width: 100%;
+  height: auto;
+  }
+.thesis h1 {
+  text-align: center;
+  padding-top: 2rem;
+}
+.thesis .column-container {
+  display: flex;
+  width: 100%;
+}
+  .thesis .column1,
+  .thesis .column2 {
+    padding: 2rem 1.5rem;
+  }
+  .thesis .column1 {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding-bottom: 2rem;
+  }
+  .thesis .column1 video {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    object-fit: contain;
+  }
+  .thesis .column1 h2 {
+    display: block;
+    padding: 1.5rem 0 0.5rem 0;
+  }
+  .thesis .column1 p {
+    padding-bottom: 2rem;
+  }
+  .thesis .column2 {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start; */
+    width: 40%;
+    min-width: 330px;
+    padding: 0;
+  }
+  .thesis .column2 #article {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .thesis .column2 img {
+    display: block;
+    width: 35%;
+    object-fit: contain;
+    margin: 1rem;
+  }
+  .thesis .column2 .content {
+    display: inline-block;
+    width: 65%;
+  }
+  .thesis .column2 .article1 img,
+  .thesis .column2 .article1 .content {
+    padding-top: 2rem;
+  }
+  .thesis .column2 .article2 {
+    background-color: #CBC7CC;
+  }
+  @media only screen and (max-width: 640px) {
+    .thesis h1 {
+      padding-bottom: 2rem;
+    }
+    .thesis .column1 {
+      width: 100%;
+      padding: 0;
+    }
+    .thesis .column1 .container,
+    .thesis .column2 {
+      display: none;
+    }
+  }
+  /* Footer section */
+  footer {
+    position: relative;
+    top: 4rem;
+    width: 100%;
+  }
+  .footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-top: 2px solid #CBC7CC;
+    padding: 1rem 0 3rem 0;
+  }
+  .footer div {
+    margin-left: 1.5rem;
+  }
+  .footer ul {
+    display: flex;
+  }
+  .footer ul li {
+    margin-right: 1.5rem;
+  }
+  @media only screen and (max-width: 640px) {
+  .footer {
+    padding-top: 1.5rem;
+    padding-bottom: 0;
+  }
+    .footer div {
+      margin: 0;
+      padding: 1rem;
+    }
+    .footer ul {
+      display: none;
+    }
+  }
